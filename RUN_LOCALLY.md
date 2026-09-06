@@ -141,6 +141,7 @@ npm run test:extension
 
 # 4. Strict Type Checking (Mypy for Python + tsc for TypeScript)
 npm run typecheck
+cd apps/backend && uv run mypy src evaluation && cd ../..
 
 # 5. Linting (Ruff for Python + ESLint for TypeScript/React)
 npm run lint

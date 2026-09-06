@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "uv run pywrangler dev",
     "test": "uv run pytest",
-    "typecheck": "uv run mypy src",
+    "typecheck:backend": "uv run mypy src",
     "lint": "uv run ruff check ."
   }
 }
