@@ -24,7 +24,9 @@
     "postinstall": "npm run postinstall --workspace=youtube-ai-extension"
   },
   "overrides": {
-    "@vitejs/plugin-react": "^4.3.4"
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
