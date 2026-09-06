@@ -1,0 +1,758 @@
+{
+  "metadata": {
+    "dataset_version": "v1.0.0",
+    "code_version": "0.1.0",
+    "prompt_version": "v1.0",
+    "embedding_provider": "deterministic-384d",
+    "chunker_version": "semantic-sliding-window-v1",
+    "llm_provider": "mock-llm",
+    "llm_model": "mock-model-v1",
+    "run_timestamp": "2026-09-06T10:36:46.447120+00:00",
+    "environment": "evaluation-offline"
+  },
+  "retrieval": {
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "recall_at_10": 1.0,
+    "precision_at_5": 0.2,
+    "mrr": 1.0,
+    "mean_iou": 1.0,
+    "category_breakdown": {
+      "Technology": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Science": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Education": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "History": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Business": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Programming": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "News/commentary": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Tutorials": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Interviews": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "Long-form lectures": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      }
+    },
+    "question_type_breakdown": {
+      "definition": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "why/explanation": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "comparison": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "fact lookup": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "temporal": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "multi-hop": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "speaker-related": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "follow-up": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      }
+    },
+    "duration_tier_breakdown": {
+      "5-20m": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "<5m": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      "20-60m": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      },
+      ">60m": {
+        "mrr": 1.0,
+        "recall_at_5": 1.0
+      }
+    }
+  },
+  "rewriting": {
+    "rewrite_accuracy": 0.9167,
+    "entity_preservation_rate": 1.0,
+    "topic_preservation_rate": 0.9167,
+    "no_rewrite_preservation_rate": 1.0,
+    "total_cases": 12
+  },
+  "context": {
+    "context_precision": 0.6894,
+    "context_recall": 0.9545,
+    "duplicate_chunk_rate": 0.0,
+    "unique_evidence_coverage": 0.9545
+  },
+  "generation": {
+    "grounded_answer_rate": 0.9545,
+    "unsupported_claim_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "correct_abstention_rate": 1.0,
+    "no_answer_precision": 0.75,
+    "no_answer_recall": 1.0,
+    "answer_correctness_score": 0.7867,
+    "category_breakdown": {
+      "definition": {
+        "correctness": 0.8333
+      },
+      "why/explanation": {
+        "correctness": 0.8333
+      },
+      "comparison": {
+        "correctness": 0.6667
+      },
+      "fact lookup": {
+        "correctness": 0.7778
+      },
+      "negative/no-evidence": {
+        "correctness": 1.0
+      },
+      "temporal": {
+        "correctness": 1.0
+      },
+      "multi-hop": {
+        "correctness": 0.6667
+      },
+      "speaker-related": {
+        "correctness": 0.8333
+      },
+      "ambiguous": {
+        "correctness": 1.0
+      },
+      "follow-up": {
+        "correctness": 0.0
+      }
+    }
+  },
+  "citations": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "citation_validity_rate": 1.0,
+    "mean_temporal_iou": 0.7857,
+    "phantom_rejection_rate": 1.0
+  },
+  "latency": {
+    "retrieval_ms": {
+      "p50_ms": 0.98,
+      "p95_ms": 1.59,
+      "p99_ms": 2.14,
+      "mean_ms": 1.12
+    },
+    "llm_ttft_ms": {
+      "p50_ms": 0.02,
+      "p95_ms": 5.0,
+      "p99_ms": 5.0,
+      "mean_ms": 0.62
+    },
+    "llm_total_ms": {
+      "p50_ms": 0.04,
+      "p95_ms": 10.0,
+      "p99_ms": 10.0,
+      "mean_ms": 1.24
+    },
+    "citation_resolution_ms": {
+      "p50_ms": 0.06,
+      "p95_ms": 0.5,
+      "p99_ms": 0.56,
+      "mean_ms": 0.14
+    },
+    "end_to_end_ms": {
+      "p50_ms": 0.15,
+      "p95_ms": 0.24,
+      "p99_ms": 0.63,
+      "mean_ms": 0.16
+    }
+  },
+  "security": {
+    "transcript_injection_defense_rate": 1.0,
+    "user_prompt_injection_defense_rate": 1.0,
+    "conversation_injection_defense_rate": 1.0,
+    "cross_video_isolation_rate": 1.0,
+    "cross_user_isolation_rate": 1.0,
+    "overall_safety_rate": 1.0
+  },
+  "regression_gate_status": "PASS",
+  "traces": [
+    {
+      "test_id": "qa_001",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "What is self-attention?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0", "chunk_4", "chunk_7", "chunk_3"],
+      "retrieval_scores": [
+        0.6227057028902239, 0.35320412557274133, 0.15193322159160152, 0.019642732160710927
+      ],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_0\nTimestamp: 1:12 - 2:20 (72.0s - 140.0s)\nScore: 0.6227\nText: self-attention mechanism. Self-attention is an attention mechanism relating different positions of a single sequence to compute a representation of the sequence, allowing each token to attend to all other tokens directly\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 5:20 - 6:50 (320.0s - 410.0s)\nScore: 0.3532\nText: multi-head allows the model to jointly attend. Multi-head attention projects queries, keys, and values linearly h times with different learned projections, allowing the model to jointly attend to information from different representation subspaces at different positions, unlike single attention which averages across all representations",
+      "model_raw_answer": "Self-attention is an attention mechanism relating different positions of a single sequence to compute a representation of the sequence, allowing each token to attend to all other tokens directly. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_0",
+          "start": 72.0,
+          "end": 140.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_002",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "Why does the transformer scale the dot products by square root of d_k?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_3", "chunk_7", "chunk_4", "chunk_0"],
+      "retrieval_scores": [
+        0.5948094150774951, 0.154312255074062, 0.07441441756815965, 0.06781312650107439
+      ],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_3\nTimestamp: 3:30 - 4:40 (210.0s - 280.0s)\nScore: 0.5948\nText: scale the dot products. The transformer scales the dot products by 1/sqrt(d_k) because for large values of d_k, the dot products grow large in magnitude, pushing the softmax function into regions with extremely small gradients",
+      "model_raw_answer": "The transformer scales the dot products by 1/sqrt(d_k) because for large values of d_k, the dot products grow large in magnitude, pushing the softmax function into regions with extremely small gradients. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_3",
+          "start": 210.0,
+          "end": 280.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_003",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "How does multi-head attention compare to single attention?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_4", "chunk_0", "chunk_7", "chunk_3"],
+      "retrieval_scores": [
+        0.5354899421438916, 0.47350157127834597, 0.21963776344820565, 0.009486540013729254
+      ],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_4\nTimestamp: 5:20 - 6:50 (320.0s - 410.0s)\nScore: 0.5355\nText: multi-head allows the model to jointly attend. Multi-head attention projects queries, keys, and values linearly h times with different learned projections, allowing the model to jointly attend to information from different representation subspaces at different positions, unlike single attention which averages across all representations\n\n[E2]\nChunk ID: chunk_0\nTimestamp: 1:12 - 2:20 (72.0s - 140.0s)\nScore: 0.4735\nText: self-attention mechanism. Self-attention is an attention mechanism relating different positions of a single sequence to compute a representation of the sequence, allowing each token to attend to all other tokens directly\n\n[E3]\nChunk ID: chunk_7\nTimestamp: 8:30 - 9:40 (510.0s - 580.0s)\nScore: 0.2196\nText: sine and cosine functions of different frequencies. For even dimensions (2i), the positional encoding uses the sine function: PE(pos, 2i) = sin(pos / 10000^(2i / d_model))",
+      "model_raw_answer": "Multi-head attention projects queries, keys, and values linearly h times with different learned projections, allowing the model to jointly attend to information from different representation subspaces at different positions, unlike single attention which averages across all representations. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_4",
+          "start": 320.0,
+          "end": 410.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_004",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "What positional encoding formula was used for even dimensions?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_7", "chunk_4", "chunk_0", "chunk_3"],
+      "retrieval_scores": [
+        0.5372140783280969, 0.29046091219093667, 0.2709695800400244, 0.15136035695610592
+      ],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_7\nTimestamp: 8:30 - 9:40 (510.0s - 580.0s)\nScore: 0.5372\nText: sine and cosine functions of different frequencies. For even dimensions (2i), the positional encoding uses the sine function: PE(pos, 2i) = sin(pos / 10000^(2i / d_model))\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 5:20 - 6:50 (320.0s - 410.0s)\nScore: 0.2905\nText: multi-head allows the model to jointly attend. Multi-head attention projects queries, keys, and values linearly h times with different learned projections, allowing the model to jointly attend to information from different representation subspaces at different positions, unlike single attention which averages across all representations\n\n[E3]\nChunk ID: chunk_0\nTimestamp: 1:12 - 2:20 (72.0s - 140.0s)\nScore: 0.2710\nText: self-attention mechanism. Self-attention is an attention mechanism relating different positions of a single sequence to compute a representation of the sequence, allowing each token to attend to all other tokens directly",
+      "model_raw_answer": "For even dimensions (2i), the positional encoding uses the sine function: PE(pos, 2i) = sin(pos / 10000^(2i / d_model)). [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_7",
+          "start": 510.0,
+          "end": 580.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_005",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "What is the capital of Australia according to the transformer paper?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_3", "chunk_7", "chunk_0", "chunk_4"],
+      "retrieval_scores": [
+        0.26875556803345924, 0.19977555548094925, 0.15887106144994032, 0.13688036280952776
+      ],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_3\nTimestamp: 3:30 - 4:40 (210.0s - 280.0s)\nScore: 0.2688\nText: scale the dot products. The transformer scales the dot products by 1/sqrt(d_k) because for large values of d_k, the dot products grow large in magnitude, pushing the softmax function into regions with extremely small gradients",
+      "model_raw_answer": "I cannot answer this question based on the provided video transcript, as no relevant information was found.",
+      "resolved_citations": [],
+      "is_grounded": false,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_006",
+      "video_id": "dQw4w9WgXcQ",
+      "question": "What is quantum superposition?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0", "chunk_4", "chunk_2"],
+      "retrieval_scores": [0.42844194728707946, 0.2060395927525411, 0.13068652142921058],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_0\nTimestamp: 0:45 - 1:55 (45.0s - 115.0s)\nScore: 0.4284\nText: qubit can exist in a linear combination of states. Quantum superposition is the principle that a quantum system or qubit can exist in a linear combination of multiple states (both 0 and 1) simultaneously until it is measured\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 6:00 - 7:20 (360.0s - 440.0s)\nScore: 0.2060\nText: environmental thermal noise destroys quantum state. Qubits are susceptible to decoherence because unavoidable interactions with environmental noise, such as thermal vibrations and electromagnetic fluctuations, disrupt fragile quantum phase relationships and cause state decay",
+      "model_raw_answer": "Quantum superposition is the principle that a quantum system or qubit can exist in a linear combination of multiple states (both 0 and 1) simultaneously until it is measured. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_0",
+          "start": 45.0,
+          "end": 115.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_007",
+      "video_id": "dQw4w9WgXcQ",
+      "question": "How is quantum entanglement different from classical correlation?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_2", "chunk_4", "chunk_0"],
+      "retrieval_scores": [0.610451315813913, 0.3776178072524428, 0.19371779767502667],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_2\nTimestamp: 3:00 - 4:20 (180.0s - 260.0s)\nScore: 0.6105\nText: entanglement links particles instantaneously regardless of distance. Quantum entanglement links two or more particles such that the quantum state of each particle cannot be described independently, producing instantaneous correlation upon measurement across any distance, violating classical local realism\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 6:00 - 7:20 (360.0s - 440.0s)\nScore: 0.3776\nText: environmental thermal noise destroys quantum state. Qubits are susceptible to decoherence because unavoidable interactions with environmental noise, such as thermal vibrations and electromagnetic fluctuations, disrupt fragile quantum phase relationships and cause state decay",
+      "model_raw_answer": "Quantum entanglement links two or more particles such that the quantum state of each particle cannot be described independently, producing instantaneous correlation upon measurement across any distance, violating classical local realism. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_2",
+          "start": 180.0,
+          "end": 260.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_008",
+      "video_id": "dQw4w9WgXcQ",
+      "question": "Why are qubits susceptible to decoherence?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_4", "chunk_0", "chunk_2"],
+      "retrieval_scores": [0.35660081683522965, 0.11919650132393357, 0.07265997063539946],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_4\nTimestamp: 6:00 - 7:20 (360.0s - 440.0s)\nScore: 0.3566\nText: environmental thermal noise destroys quantum state. Qubits are susceptible to decoherence because unavoidable interactions with environmental noise, such as thermal vibrations and electromagnetic fluctuations, disrupt fragile quantum phase relationships and cause state decay",
+      "model_raw_answer": "Qubits are susceptible to decoherence because unavoidable interactions with environmental noise, such as thermal vibrations and electromagnetic fluctuations, disrupt fragile quantum phase relationships and cause state decay. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_4",
+          "start": 360.0,
+          "end": 440.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_009",
+      "video_id": "abc123math",
+      "question": "What is the formal epsilon-delta definition of a limit?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0", "chunk_1"],
+      "retrieval_scores": [0.3738944116295078, 0.2522420809549453],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_0\nTimestamp: 0:30 - 1:30 (30.0s - 90.0s)\nScore: 0.3739\nText: for every epsilon greater than zero there exists a delta. The limit of f(x) as x approaches c is L if for every epsilon > 0, there exists a delta > 0 such that whenever 0 < |x - c| < delta, then |f(x) - L| < epsilon\n\n[E2]\nChunk ID: chunk_1\nTimestamp: 1:50 - 2:55 (110.0s - 175.0s)\nScore: 0.2522\nText: limit as x approaches c equals f of c. A function f is continuous at a point c if f(c) is defined, the limit of f(x) as x approaches c exists, and the limit of f(x) as x approaches c equals f(c)",
+      "model_raw_answer": "The limit of f(x) as x approaches c is L if for every epsilon > 0, there exists a delta > 0 such that whenever 0 < |x - c| < delta, then |f(x) - L| < epsilon. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_0",
+          "start": 30.0,
+          "end": 90.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_010",
+      "video_id": "abc123math",
+      "question": "When is a function considered continuous at a point c?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_1", "chunk_0"],
+      "retrieval_scores": [0.3768689751610717, 0.06456496187468728],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_1\nTimestamp: 1:50 - 2:55 (110.0s - 175.0s)\nScore: 0.3769\nText: limit as x approaches c equals f of c. A function f is continuous at a point c if f(c) is defined, the limit of f(x) as x approaches c exists, and the limit of f(x) as x approaches c equals f(c)",
+      "model_raw_answer": "A function f is continuous at a point c if f(c) is defined, the limit of f(x) as x approaches c exists, and the limit of f(x) as x approaches c equals f(c). [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_1",
+          "start": 110.0,
+          "end": 175.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_011",
+      "video_id": "hist987rome",
+      "question": "In what year did the sack of Rome by Alaric occur?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_3", "chunk_6"],
+      "retrieval_scores": [0.4986737617181098, 0.02820125488915868],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_3\nTimestamp: 6:50 - 8:00 (410.0s - 480.0s)\nScore: 0.4987\nText: in 410 AD the Visigoths under Alaric breached the gates. The sack of Rome by the Visigoths under Alaric occurred in 410 AD",
+      "model_raw_answer": "The sack of Rome by the Visigoths under Alaric occurred in 410 AD. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_3",
+          "start": 410.0,
+          "end": 480.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_012",
+      "video_id": "hist987rome",
+      "question": "How did currency debasement lead to military recruitment shortages in Rome?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_6", "chunk_3"],
+      "retrieval_scores": [0.2091680685460773, 0.02932834799867913],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_6\nTimestamp: 13:40 - 15:30 (820.0s - 930.0s)\nScore: 0.2092\nText: inflation reduced soldier purchasing power leading to reliance on foederati. Successive emperors debased the silver content of the denarius to fund government expenditures, causing runaway inflation. This drastically reduced the real wages of soldiers, making military service unattractive to Roman citizens and forcing reliance on foreign mercenaries (foederati)",
+      "model_raw_answer": "Successive emperors debased the silver content of the denarius to fund government expenditures, causing runaway inflation. This drastically reduced the real wages of soldiers, making military service unattractive to Roman citizens and forcing reliance on foreign mercenaries (foederati). [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_6",
+          "start": 820.0,
+          "end": 930.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_013",
+      "video_id": "biz456saas",
+      "question": "What is the rule of thumb ratio for Customer Lifetime Value to Customer Acquisition Cost?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_2", "chunk_4"],
+      "retrieval_scores": [0.45785136870984333, 0.30834162298470863],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_2\nTimestamp: 3:30 - 4:45 (210.0s - 285.0s)\nScore: 0.4579\nText: healthy SaaS business targets an LTV to CAC ratio of at least 3 to 1. A healthy SaaS benchmark targets an LTV:CAC ratio of at least 3:1, indicating that customer lifetime value is at least three times the cost of acquisition\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 7:30 - 9:00 (450.0s - 540.0s)\nScore: 0.3083\nText: expansion revenue offsets logos lost and compounds growth. Net revenue retention accounts for expansion revenue (upsells, cross-sells) from existing customers in addition to churn, allowing top-tier enterprise businesses to grow even if logo retention dips, whereas gross retention is strictly capped at 100%",
+      "model_raw_answer": "A healthy SaaS benchmark targets an LTV:CAC ratio of at least 3:1, indicating that customer lifetime value is at least three times the cost of acquisition. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_2",
+          "start": 210.0,
+          "end": 285.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_014",
+      "video_id": "biz456saas",
+      "question": "Why is net revenue retention more critical than gross retention for enterprise SaaS?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_4", "chunk_2"],
+      "retrieval_scores": [0.6675541577964479, 0.14841457793890583],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_4\nTimestamp: 7:30 - 9:00 (450.0s - 540.0s)\nScore: 0.6676\nText: expansion revenue offsets logos lost and compounds growth. Net revenue retention accounts for expansion revenue (upsells, cross-sells) from existing customers in addition to churn, allowing top-tier enterprise businesses to grow even if logo retention dips, whereas gross retention is strictly capped at 100%",
+      "model_raw_answer": "Net revenue retention accounts for expansion revenue (upsells, cross-sells) from existing customers in addition to churn, allowing top-tier enterprise businesses to grow even if logo retention dips, whereas gross retention is strictly capped at 100%. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_4",
+          "start": 450.0,
+          "end": 540.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_015",
+      "video_id": "py789async",
+      "question": "How does Python's event loop schedule coroutines?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_1", "chunk_4"],
+      "retrieval_scores": [0.28902141836578504, 0.24558768896631752],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_1\nTimestamp: 3:00 - 4:30 (180.0s - 270.0s)\nScore: 0.2890\nText: event loop maintains ready and waiting queues and polls OS selectors. Python's event loop maintains a FIFO queue of ready tasks and registers I/O file descriptors with OS selectors (such as epoll or kqueue). When a coroutine awaits, control yields back to the loop, which executes other ready callbacks until the awaited I/O event fires\n\n[E2]\nChunk ID: chunk_4\nTimestamp: 9:00 - 10:20 (540.0s - 620.0s)\nScore: 0.2456\nText: blocks the OS thread and freezes all concurrent tasks. Running a blocking CPU-bound operation directly in an async function blocks the OS thread running the event loop, freezing all other concurrent tasks and preventing scheduled callbacks from running",
+      "model_raw_answer": "Python's event loop maintains a FIFO queue of ready tasks and registers I/O file descriptors with OS selectors (such as epoll or kqueue). When a coroutine awaits, control yields back to the loop, which executes other ready callbacks until the awaited I/O event fires. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_1",
+          "start": 180.0,
+          "end": 270.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_016",
+      "video_id": "py789async",
+      "question": "What happens if you run a blocking CPU-bound function directly inside an async def?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_4", "chunk_1"],
+      "retrieval_scores": [0.39414827892564325, 0.08549952927748482],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_4\nTimestamp: 9:00 - 10:20 (540.0s - 620.0s)\nScore: 0.3941\nText: blocks the OS thread and freezes all concurrent tasks. Running a blocking CPU-bound operation directly in an async function blocks the OS thread running the event loop, freezing all other concurrent tasks and preventing scheduled callbacks from running",
+      "model_raw_answer": "Running a blocking CPU-bound operation directly in an async function blocks the OS thread running the event loop, freezing all other concurrent tasks and preventing scheduled callbacks from running. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_4",
+          "start": 540.0,
+          "end": 620.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_017",
+      "video_id": "news321chip",
+      "question": "What export restriction threshold applies to extreme ultraviolet lithography machines?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_1", "chunk_3"],
+      "retrieval_scores": [0.5047647985212769, 0.1595855478031395],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_1\nTimestamp: 2:00 - 3:15 (120.0s - 195.0s)\nScore: 0.5048\nText: advanced EUV lithography systems below seven nanometers. Export restrictions prohibit licensing of extreme ultraviolet (EUV) lithography systems and advanced immersion DUV machines capable of producing semiconductor nodes below seven nanometers without special authorization",
+      "model_raw_answer": "Export restrictions prohibit licensing of extreme ultraviolet (EUV) lithography systems and advanced immersion DUV machines capable of producing semiconductor nodes below seven nanometers without special authorization. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_1",
+          "start": 120.0,
+          "end": 195.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_018",
+      "video_id": "news321chip",
+      "question": "What did the trade analyst argue regarding domestic packaging facilities?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_3", "chunk_1"],
+      "retrieval_scores": [0.4420396122288581, 0.2278844194723482],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_3\nTimestamp: 6:20 - 7:40 (380.0s - 460.0s)\nScore: 0.4420\nText: analyst Sarah Chen emphasized advanced packaging as the new bottleneck. Analyst Sarah Chen argued that while leading-edge wafer fabrication grabs headlines, advanced packaging facilities (such as chiplet integration) represent the true operational bottleneck for domestic chip sovereignty\n\n[E2]\nChunk ID: chunk_1\nTimestamp: 2:00 - 3:15 (120.0s - 195.0s)\nScore: 0.2279\nText: advanced EUV lithography systems below seven nanometers. Export restrictions prohibit licensing of extreme ultraviolet (EUV) lithography systems and advanced immersion DUV machines capable of producing semiconductor nodes below seven nanometers without special authorization",
+      "model_raw_answer": "Analyst Sarah Chen argued that while leading-edge wafer fabrication grabs headlines, advanced packaging facilities (such as chiplet integration) represent the true operational bottleneck for domestic chip sovereignty. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_3",
+          "start": 380.0,
+          "end": 460.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_019",
+      "video_id": "tut654git",
+      "question": "How does git rebase differ from git merge in terms of commit history graph?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0"],
+      "retrieval_scores": [0.4943760671002731],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_0\nTimestamp: 0:40 - 1:50 (40.0s - 110.0s)\nScore: 0.4944\nText: rebase rewrites commits linearly while merge creates a merge commit. Git rebase reapplies commits on top of another base branch to create a linear project history without extra merge commits, whereas git merge preserves the complete branching history by creating a two-parent merge commit",
+      "model_raw_answer": "Git rebase reapplies commits on top of another base branch to create a linear project history without extra merge commits, whereas git merge preserves the complete branching history by creating a two-parent merge commit. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_0",
+          "start": 40.0,
+          "end": 110.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_020",
+      "video_id": "int555ai",
+      "question": "What position did Dr. Vance take on scalable oversight vs red teaming?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_5"],
+      "retrieval_scores": [0.4024225858888057],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_5\nTimestamp: 10:20 - 11:50 (620.0s - 710.0s)\nScore: 0.4024\nText: Vance argued red teaming alone cannot scale past human expert capabilities. Dr. Vance argued that manual red teaming cannot scale effectively once models exceed human domain expertise, and advocated for automated scalable oversight and AI-assisted debate as the primary verification framework",
+      "model_raw_answer": "Dr. Vance argued that manual red teaming cannot scale effectively once models exceed human domain expertise, and advocated for automated scalable oversight and AI-assisted debate as the primary verification framework. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_5",
+          "start": 620.0,
+          "end": 710.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_021",
+      "video_id": "lec999mit",
+      "question": "What is the column space of a matrix A?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_3", "chunk_11"],
+      "retrieval_scores": [0.4911767414360936, 0.2699740022546616],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_3\nTimestamp: 7:00 - 8:30 (420.0s - 510.0s)\nScore: 0.4912\nText: space spanned by the columns consisting of all linear combinations. The column space C(A) is the vector subspace spanned by the column vectors of matrix A, consisting of all possible linear combinations of those columns\n\n[E2]\nChunk ID: chunk_11\nTimestamp: 23:40 - 25:30 (1420.0s - 1530.0s)\nScore: 0.2700\nText: number of free variables which equals n minus rank. The dimension of the null space equals the number of free variables, which by the Rank-Nullity Theorem is equal to the total number of columns n minus the matrix rank r (dim N(A) = n - r)",
+      "model_raw_answer": "The column space C(A) is the vector subspace spanned by the column vectors of matrix A, consisting of all possible linear combinations of those columns. [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_3",
+          "start": 420.0,
+          "end": 510.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_022",
+      "video_id": "lec999mit",
+      "question": "How do you determine the dimension of the null space?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_11", "chunk_3"],
+      "retrieval_scores": [0.375519016838312, 0.3574691055468721],
+      "context_passed_to_model": "[E1]\nChunk ID: chunk_11\nTimestamp: 23:40 - 25:30 (1420.0s - 1530.0s)\nScore: 0.3755\nText: number of free variables which equals n minus rank. The dimension of the null space equals the number of free variables, which by the Rank-Nullity Theorem is equal to the total number of columns n minus the matrix rank r (dim N(A) = n - r)\n\n[E2]\nChunk ID: chunk_3\nTimestamp: 7:00 - 8:30 (420.0s - 510.0s)\nScore: 0.3575\nText: space spanned by the columns consisting of all linear combinations. The column space C(A) is the vector subspace spanned by the column vectors of matrix A, consisting of all possible linear combinations of those columns",
+      "model_raw_answer": "The dimension of the null space equals the number of free variables, which by the Rank-Nullity Theorem is equal to the total number of columns n minus the matrix rank r (dim N(A) = n - r). [E1]",
+      "resolved_citations": [
+        {
+          "chunkId": "chunk_11",
+          "start": 1420.0,
+          "end": 1530.0,
+          "score": null
+        }
+      ],
+      "is_grounded": true,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_023",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "What does that mean?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0", "chunk_3", "chunk_4", "chunk_7"],
+      "retrieval_scores": [
+        0.057338519268735566, 0.030860871732222375, -0.00030919668001051065,
+        -0.004807457921496978
+      ],
+      "context_passed_to_model": "",
+      "model_raw_answer": "I cannot answer this question based on the provided video transcript, as no relevant information was found.",
+      "resolved_citations": [],
+      "is_grounded": false,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    },
+    {
+      "test_id": "qa_024",
+      "video_id": "Gfr50f6ZBvo",
+      "question": "Why is it useful?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_0", "chunk_4", "chunk_3", "chunk_7"],
+      "retrieval_scores": [
+        0.07261588541028581, 0.053159888321688296, 0.040085632216580264,
+        -0.027674384752360313
+      ],
+      "context_passed_to_model": "",
+      "model_raw_answer": "I cannot answer this question based on the provided video transcript, as no relevant information was found.",
+      "resolved_citations": [],
+      "is_grounded": false,
+      "status": "FAIL",
+      "error_stage": "retrieval",
+      "error_taxonomy": "RETRIEVAL_MISS"
+    },
+    {
+      "test_id": "qa_025",
+      "video_id": "py789async",
+      "question": "Does this video discuss how to train neural networks on CUDA?",
+      "rewritten_query": null,
+      "retrieved_chunk_ids": ["chunk_1", "chunk_4"],
+      "retrieval_scores": [0.08417205976587852, 0.06433449595482331],
+      "context_passed_to_model": "",
+      "model_raw_answer": "I cannot answer this question based on the provided video transcript, as no relevant information was found.",
+      "resolved_citations": [],
+      "is_grounded": false,
+      "status": "PASS",
+      "error_stage": null,
+      "error_taxonomy": null
+    }
+  ]
+}

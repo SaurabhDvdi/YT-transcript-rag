@@ -1,0 +1,122 @@
+[
+  {
+    "videoId": "Gfr50f6ZBvo",
+    "title": "Attention Is All You Need — Transformer Architecture Deep Dive",
+    "category": "Technology",
+    "durationSeconds": 920,
+    "durationTier": "5-20m",
+    "speechDensity": "dense technical",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Classic dense AI architecture lecture with complex technical terminology (multi-head attention, positional encoding, softmax scaling) to evaluate technical concept retention and precise segment retrieval."
+  },
+  {
+    "videoId": "dQw4w9WgXcQ",
+    "title": "Quantum Computing Explained in 10 Minutes",
+    "category": "Science",
+    "durationSeconds": 612,
+    "durationTier": "5-20m",
+    "speechDensity": "medium",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Explains foundational physics and computing concepts (superposition, entanglement, qubits) with clear definitions and comparison structures."
+  },
+  {
+    "videoId": "abc123math",
+    "title": "Calculus 1: Limits and Continuity Crash Course",
+    "category": "Education",
+    "durationSeconds": 240,
+    "durationTier": "<5m",
+    "speechDensity": "dense",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Short high-intensity pedagogical video testing quick fact lookup and definition retrieval under tight time bounds (<5m)."
+  },
+  {
+    "videoId": "hist987rome",
+    "title": "The Fall of the Western Roman Empire: Military and Economic Collapse",
+    "category": "History",
+    "durationSeconds": 2750,
+    "durationTier": "20-60m",
+    "speechDensity": "narrative",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Medium-to-long chronological narrative testing temporal questions, cause-and-effect explanations, and multi-hop entity reasoning across distant timestamps."
+  },
+  {
+    "videoId": "biz456saas",
+    "title": "SaaS Unit Economics: CAC, LTV, and Churn Explained",
+    "category": "Business",
+    "durationSeconds": 840,
+    "durationTier": "5-20m",
+    "speechDensity": "analytical",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Business analysis featuring financial formulas and metric relationships (LTV/CAC ratio, net revenue retention) to test numerical concept retrieval."
+  },
+  {
+    "videoId": "py789async",
+    "title": "Python AsyncIO and Event Loops: Under the Hood",
+    "category": "Programming",
+    "durationSeconds": 1350,
+    "durationTier": "20-60m",
+    "speechDensity": "dense technical code",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Code-heavy tutorial explaining coroutines, tasks, and selectors to evaluate chunking integrity when code syntax and keywords are embedded in speech."
+  },
+  {
+    "videoId": "news321chip",
+    "title": "Global Semiconductor Supply Chains and Lithography Regulations",
+    "category": "News/commentary",
+    "durationSeconds": 720,
+    "durationTier": "5-20m",
+    "speechDensity": "journalistic",
+    "speakerCount": 2,
+    "hasSpeakerLabels": true,
+    "language": "en",
+    "inclusionRationale": "Current affairs reporting with multiple contributors discussing geopolitics, equipment export restrictions, and market shifts."
+  },
+  {
+    "videoId": "tut654git",
+    "title": "Git Rebase vs Merge in 3 Minutes",
+    "category": "Tutorials",
+    "durationSeconds": 180,
+    "durationTier": "<5m",
+    "speechDensity": "fast instructional",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Ultra-short video (<5m) testing direct comparison questions (rebase vs merge) and rapid procedural steps."
+  },
+  {
+    "videoId": "int555ai",
+    "title": "Fireside Chat: AI Safety, Scalable Oversight, and Governance",
+    "category": "Interviews",
+    "durationSeconds": 2100,
+    "durationTier": "20-60m",
+    "speechDensity": "conversational multi-speaker",
+    "speakerCount": 2,
+    "hasSpeakerLabels": true,
+    "language": "en",
+    "inclusionRationale": "Conversational dialogue between interviewer and guest with natural hesitations, speaker turn-taking, and disagreeing viewpoints."
+  },
+  {
+    "videoId": "lec999mit",
+    "title": "MIT 18.06: Introduction to Linear Algebra and Vector Spaces",
+    "category": "Long-form lectures",
+    "durationSeconds": 4120,
+    "durationTier": ">60m",
+    "speechDensity": "academic blackboard lecture",
+    "speakerCount": 1,
+    "hasSpeakerLabels": false,
+    "language": "en",
+    "inclusionRationale": "Full-length university lecture (>60m, 4000+ words) to rigorously benchmark long-context chunking, memory consumption, and large corpus retrieval precision."
+  }
+]

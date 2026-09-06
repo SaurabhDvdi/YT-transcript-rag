@@ -1,0 +1,12 @@
+{
+  "name": "youtube-ai-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "uv run pywrangler dev",
+    "test": "uv run pytest",
+    "typecheck": "uv run mypy src",
+    "lint": "uv run ruff check ."
+  }
+}

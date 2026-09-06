@@ -1,0 +1,30 @@
+{
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@youtube-ai/shared-types": ["../../packages/shared-types/src/index.ts"]
+    }
+  },
+  "include": [
+    "entrypoints/**/*",
+    "components/**/*",
+    "hooks/**/*",
+    "services/**/*",
+    "types/**/*",
+    "utils/**/*",
+    "config/**/*",
+    "tests/**/*",
+    "wxt.config.ts",
+    ".wxt/types/*.d.ts"
+  ]
+}

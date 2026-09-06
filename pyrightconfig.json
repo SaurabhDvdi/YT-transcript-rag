@@ -1,0 +1,6 @@
+{
+  "include": ["apps/backend/src", "apps/backend/tests"],
+  "extraPaths": ["apps/backend", "apps/backend/src"],
+  "venvPath": "apps/backend",
+  "venv": ".venv"
+}

@@ -1,0 +1,27 @@
+name = "youtube-ai-api"
+main = "src/worker.py"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["python_workers"]
+
+[vars]
+ENVIRONMENT = "development"
+API_VERSION = "0.1.0"
+SERVICE_NAME = "youtube-ai-api"
+ALLOWED_ORIGINS = "chrome-extension://*,moz-extension://*,http://localhost:*,http://127.0.0.1:*"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "youtube-ai-db"
+database_id = "local-d1-db"
+migrations_dir = "migrations"
+
+[[kv_namespaces]]
+binding = "CACHE_KV"
+id = "youtube-ai-cache"
+
+[[vectorize]]
+binding = "VECTOR_INDEX"
+index_name = "youtube-ai-vectors"
+
+[triggers]
+crons = ["0 */4 * * *"]

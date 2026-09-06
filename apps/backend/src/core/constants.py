@@ -1,0 +1,30 @@
+"""Global application constants matching TypeScript backend specifications."""
+
+# Generation & Grounding
+NO_EVIDENCE_ANSWER_TEXT = (
+    "I cannot answer this question based on the provided video transcript, "
+    "as no relevant information was found."
+)
+
+DEFAULT_SIMILARITY_THRESHOLD = 0.25
+MIN_SIMILARITY_THRESHOLD = 0.25
+DEFAULT_TOP_K = 5
+MAX_TOP_K = 10
+MAX_CONTEXT_CHUNKS = 5
+MAX_CONTEXT_CHARACTERS = 8000
+MAX_STREAMED_OUTPUT_CHARS = 16000
+DEFAULT_MAX_OUTPUT_TOKENS = 1024
+DEFAULT_TEMPERATURE = 0.2
+DEFAULT_PROVIDER_TIMEOUT_MS = 15000
+DEFAULT_LLM_TIMEOUT_MS = 30000
+DEFAULT_STREAM_TIMEOUT_MS = 60000
+
+# Chunking & Embeddings
+TARGET_CHUNK_TOKENS = 300
+CHUNK_OVERLAP_TOKENS = 60
+EMBEDDING_DIMENSIONS = 384
+
+# History & Budgeting
+MAX_HISTORY_MESSAGES = 10
+MAX_QUESTION_LENGTH = 500
+MAX_TITLE_LENGTH = 50

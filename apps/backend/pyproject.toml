@@ -1,0 +1,41 @@
+[project]
+name = "youtube-ai-backend"
+version = "0.1.0"
+description = "Cloudflare Workers Python FastAPI backend for YouTube AI Assistant"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "pydantic>=2.10.0",
+    "httpx>=0.28.0",
+]
+
+[dependency-groups]
+dev = [
+    "workers-py>=0.1.0",
+    "workers-runtime-sdk>=0.1.0",
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+ignore_missing_imports = true
+explicit_package_bases = true
+mypy_path = "."
